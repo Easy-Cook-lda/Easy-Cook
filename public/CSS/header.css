@@ -1,0 +1,61 @@
+header, header * {
+    all: unset;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    width: calc(100% - 4rem);
+    height: 4rem;
+    padding: 0rem 2rem;
+    background-color: white;
+    box-shadow: 0px 0px 5px black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 999;
+}
+
+header #logo{
+    width: 4rem;
+    height: 3rem;
+    background: url(../ASSETS/logo2.png) center/contain no-repeat;
+    display: flex;
+    cursor: pointer;
+}
+
+header ul{
+    margin: 0;
+    list-style: none;
+    display: flex;
+    gap: 3rem;
+}
+
+header ul li a{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+header #user-profile{
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header #user-link{
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: #f59d24;
+    background-image: url(../ASSETS/user-profile.png);
+    background-position: center;
+    background-size: 80%;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    display: flex;
+}
+
+header #user-profile p{
+    margin: 0;
+}

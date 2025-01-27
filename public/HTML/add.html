@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Easy Cook - Create Recipe</title>
+
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/header.css">
+    <link rel="stylesheet" href="../CSS/add.css">
+</head>
+<body>
+    <header>
+        <a href="/" id="logo"></a>
+    
+        <ul>
+            <li>
+                <a href="/">Home</a> 
+            </li> |
+            <li>
+                <a href="/favorites">Favorites</a>
+            </li> |
+            <li>
+                <a href="/add">Add</a>
+            </li> |
+            <li>
+                <a href="/edit">Edit</a>
+            </li> 
+        </ul>
+    </header>
+    <main>
+        <section>
+            <article>
+                <h2>Use this google search to find and copy an image address for your recipe</h2>
+                <br>
+                <div class="gcse-search"></div>
+            </article>
+            <article>
+                <form onsubmit="event.preventDefault(), createRecipe()">
+                    <input type="text" placeholder="Recipe Name" id="name">
+                    <select id="areas">
+                        <option value="0" selected disabled>Select Area</option>
+                    </select>
+                    <select id="categories">
+                        <option value="0" selected disabled>Select category</option>
+                    </select>
+                    <input type="text" placeholder="Image Url" id="image">
+                    <textarea placeholder="Instructions" id="instructions"></textarea>
+                    <input type="number" placeholder="Time in minutes" id="time">
+                    <input type="number" placeholder="Cost in euros" id="cost">
+                    <select id="difficulty">
+                        <option value="0" selected disabled>Select difficulty</option>
+                        <option value="easy">Easy</option>
+                        <option value="medium">Medium</option>
+                        <option value="hard">Hard</option>
+                    </select>
+                    <button type="submit">Create Recipe</button>
+                </form>
+                <form onsubmit="event.preventDefault(), addIngredints()">
+                    <input type="text" placeholder="Ingredint" id="ingredint">
+                    <button onclick="newIngree"></button>
+                    <button type="submit">Add Ingredients</button>
+                </form>
+            </article>
+        </section>
+    </main>
+    <script src="../JS/add.js"></script>
+    <script src="../JS/user.js"></script>
+    <script async src="https://cse.google.com/cse.js?cx=20afc41aab0014e5d"></script>
+</body>
+</html>

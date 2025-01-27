@@ -1,0 +1,48 @@
+main{
+    min-height: calc(100svh - 6rem);
+    margin-top: 4rem;
+    padding: 1rem;
+    background-image: url(../ASSETS/image.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#receitas {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+    gap: 1rem;
+}
+
+.receita{
+    min-height: 15rem;
+    padding: 1rem;
+    color: white;
+    background-color: #f59e2473;
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    justify-content: space-between;
+}
+
+.receita img{
+    width: 100%;
+    height: 12rem;
+}
+
+.receita a{
+    width: fit-content;
+}
+
+button{
+    padding: 1rem 2rem;
+    color: white;
+    font-size: 1.05em;
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.192);
+    backdrop-filter: blur(10px);
+    border: none;
+    cursor: pointer;
+}

@@ -1,0 +1,9 @@
+main{
+    min-height: calc(100svh - 6rem);
+    margin-top: 4rem;
+    background-image: url(../ASSETS/image.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}

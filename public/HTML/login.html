@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Haven - Signin</title>
+    <link rel="icon" href="../ASSETS/favicon.ico">
+
+    <!-- Style -->
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/header.css">
+    <link rel="stylesheet" href="../CSS/signin.css">
+</head>
+<body>
+    <section>
+            <form onsubmit="event.preventDefault(), login()">
+                <img src="../ASSETS/logo.png" alt="Logo">
+                <input type="text" placeholder="Name" id="name" required>
+                <input type="email" placeholder="Email" id="email" required>
+                <input type="password" placeholder="Password" id="pass" required>
+                <button type="submit">Log in</button>
+            </form>
+            <a href="/signin.html">Sign in</a>
+    </section>
+    <footer></footer>
+
+    <!-- Script -->
+    <script src="../JS/login.js"></script>
+</body>
+</html>

@@ -1,0 +1,109 @@
+main{
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#searchContainer{
+    display: flex;
+    gap: 1rem;
+}
+
+#searchContainer input{
+    width: 100%;
+    padding: 1rem;
+    color: white;
+    font-size: 1.1em;
+    background-color: rgba(255, 255, 255, 0.192);
+    backdrop-filter: blur(10px);
+    border: none;
+    outline: none;
+}
+
+#searchContainer input::placeholder{
+    color: white;
+}
+
+#filters{
+    position: relative;
+    display: flex;
+    gap: 1rem;
+}
+
+#categories, #areas{
+    padding: 1rem;
+    color: white;
+    font-size: 1.1em;
+    background-color: rgba(255, 255, 255, 0.192);
+    backdrop-filter: blur(10px);
+    border: none;
+    outline: none;
+}
+
+#categories option, #areas option{
+    color: black;
+}
+
+button{
+    padding: 1rem 2rem;
+    color: white;
+    font-size: 1.05em;
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.192);
+    backdrop-filter: blur(10px);
+    border: none;
+    cursor: pointer;
+}
+
+#receitas {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+    gap: 1rem;
+}
+
+.receita{
+    min-height: 15rem;
+    padding: 1rem;
+    color: white;
+    background-color: #f59e2473;
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    justify-content: space-between;
+}
+
+.receita img{
+    width: 100%;
+    height: 12rem;
+}
+
+.receita a{
+    width: fit-content;
+}
+
+#load{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(112, 112, 112, 0.493);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+}
+
+#load h1{
+    width: 30rem;
+    height: 15rem;
+    color: black;
+    font-weight: bold;
+    background-color: white;
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
