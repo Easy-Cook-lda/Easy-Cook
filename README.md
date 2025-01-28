@@ -22,7 +22,7 @@ Este projeto é um site de receitas desenvolvido como parte da cadeira de Progra
 
 **Estrutura do Projeto**
 
-![image](https://github.com/user-attachments/assets/d9dee85d-56dc-4e46-91b2-eb09aaed7519)
+![image](https://github.com/user-attachments/assets/f9b7e50a-848a-41c6-bd48-13afeae57c66)
 
 **Endpoints Principais**
 
